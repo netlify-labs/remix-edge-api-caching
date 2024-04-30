@@ -1,7 +1,12 @@
-# Welcome to Remix!
+# Fast Edge Rendering with Remix
 
-- [Remix Docs](https://remix.run/docs)
-- [Netlify Functions Overview](https://docs.netlify.com/functions/overview)
+Edge rendering can be fast if combined with edge API caching. This is a simple example of using Remix with edge rendering and Netlify Functions as a backend for the front-end that uses stale-while-revalidate to keep API responses fast at the edge.
+
+It renders a plain list of the latest stories from Hacker News. In `app/_index.tsx` a loader fetches the storeis from a Netlify Function. The function uses the Stale While Revalidate approach to keep responses fast and cached at the edge when deployed to Netlify.
+
+Read more about the approach in this guide to [Fast Edge Rendering with API Caching](https://developers.netlify.com/guides/how-to-make-edge-rendering-fast/)
+
+##
 
 ## Netlify Setup
 
